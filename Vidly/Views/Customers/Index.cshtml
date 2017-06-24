@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/MyLayout/MyLayout.cshtml";
+}
+
+<h2>Customers</h2>
+
+
+
+    <ul>
+        @foreach (var customer in ViewBag.customers)
+        {
+            <li>@customer.Name</li>
+        }
+
+    </ul>
+
+
+
